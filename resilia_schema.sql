@@ -16,8 +16,11 @@ CREATE TABLE IF NOT EXISTS Cursos (
 
 CREATE TABLE IF NOT EXISTS Modulos (
     id_modulo INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    id_curso INT NOT NULL,
-    FOREIGN KEY (id_curso)
+    num_Mod  int not null, 
+    Conteudo varchar (64) not null,
+    Duracao int not null, 
+            id_curso INT NOT NULL,
+       FOREIGN KEY (id_curso)
         REFERENCES Cursos (id_curso),
     id_facilitador INT NOT NULL,
     FOREIGN KEY (id_facilitador)

@@ -15,10 +15,23 @@ insert into Cursos (, , ) values
 (, , , , ),
 (, , , , );
 
-insert into Modulos (id_curso, id_facilitador, ) values 
-(, , , , ),
-(, , , , ),
-(, , , , );
+insert into Modulos ( num_Mod, Conteudo, Duracao, id_curso, id_facilitador) values 
+( 1,'HTML', '5 semanas', 1, 5),
+( 1, 'HTML', '4 semanas', 2,7),
+( 1, 'softSkills', '5 semanas', 1, 1),
+( 1, 'softSkills', '4 semanas', 2, 6),
+( 2, 'CSS', '5 semanas', 1, 4),
+( 2, 'CSS', '4 semanas', 2, 7),
+( 2, 'softSkills', '5 semanas', 1, 11),
+( 2, 'softSkills', '4 semanas', 2, 1),
+( 3, 'JS', '5 semanas', 1, 3),
+( 3, 'JS', '4 semanas', 2, 10),
+( 3, 'softSkills', '5 semanas', 1, 6),
+( 3, 'softSkills', '4 semanas',2,11),
+( 4, 'BD', '5 semanas', 1, 2);
+( 4, 'BD', '4 semanas', 2, 10);
+( 4, 'softSkills', '5 semanas', 1, 1),
+( 4, 'softSkills', '4 semanas', 2, 6);
 
 insert into Alunos (nome, sobrenome, CPF, idade, genero, email, UF, cidade, endereco, data_nascimento, id_curso, id_modulo) values 
 ("João", "dos Santos", 012345678910, 25, "masculino", "joao@mail.com", "RS", "Porto Alegre", "Av. Independência, nº315, apto 14", 1997-08-07, 4, 1),
