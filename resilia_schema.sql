@@ -8,6 +8,13 @@ CREATE TABLE IF NOT EXISTS Departamentos (
 
 CREATE TABLE IF NOT EXISTS Facilitadores (
     id_facilitador INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    Nome varchar (20),
+    sobreNome varchar (44),
+    HTML bit,
+    CSS bit,
+    JS bit,
+    BD bit,
+    softSkills bit
 );
 
 CREATE TABLE IF NOT EXISTS Cursos (

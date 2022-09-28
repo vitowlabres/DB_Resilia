@@ -5,10 +5,18 @@ insert into Departamentos (, , ) values
 (, , , , ),
 (, , , , );
 
-insert into Facilitadores (, , ) values 
-(, , , , ),
-(, , , , ),
-(, , , , );
+insert into Facilitadores (nome, sobreNome, HTML, CSS, JS, BD, softSkills) values 
+( 'Taís', 'Cunha', false, false, false, false, true),
+('Léo', 'Costa', false, false, true, true, false),
+('Gabriel', 'Izoton', true, true, true, false, false),
+('Inara', 'Almeida', true, true, true, false, false),
+('Rodolfo', 'Alves', true, true, true, false, false),
+('Vitoria', 'Ferreira', false, false, false, false, true),
+('Luth', 'Mendes', true, true, true, true, false),
+('Anna', 'Sousa', true, true, true, true, false),
+('Rodolfo', 'Pereira', true, true, true, false, false),
+('Nicolas', 'Dias', true, true, true, true, false),
+('Giovanni', 'Alvarenga', false, false, false, false, true);
 
 insert into Cursos (, , ) values 
 (, , , , ),
