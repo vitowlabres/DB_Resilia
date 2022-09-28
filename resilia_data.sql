@@ -22,10 +22,17 @@ insert into Facilitadores (nome, sobreNome, HTML, CSS, JS, BD, softSkills) value
 ('Nicolas', 'Dias', true, true, true, true, false),
 ('Giovanni', 'Alvarenga', false, false, false, false, true);
 
-insert into Cursos (, , ) values 
-(, , , , ),
-(, , , , ),
-(, , , , );
+insert into Cursos (id_curso, curso, emp_parceira) values 
+(1,'WebDev Full Stack', null),
+(2,'Data Analytics',  null),
+(1,'WebDev Full Stack', 'Nubank'),
+(2,'Data Analytics', 'Renner'),
+(1,'WebDev Full Stack', 'Globo'),
+(2,'Data Analytics', 'Ifood'),
+(1,'WebDev Full Stack',  'Stone'),
+(2,'Data Analytics', 'Passeidireto'),
+(1,'WebDev Full Stack', 'Xp'),
+(2,'Data Analytics', 'Itau');
 
 insert into Modulos ( num_Mod, Conteudo, Duracao, id_curso, id_facilitador) values 
 ( 1,'HTML', '5 semanas', 1, 5),
@@ -40,8 +47,8 @@ insert into Modulos ( num_Mod, Conteudo, Duracao, id_curso, id_facilitador) valu
 ( 3, 'JS', '4 semanas', 2, 10),
 ( 3, 'softSkills', '5 semanas', 1, 6),
 ( 3, 'softSkills', '4 semanas',2,11),
-( 4, 'BD', '5 semanas', 1, 2);
-( 4, 'BD', '4 semanas', 2, 10);
+( 4, 'BD', '5 semanas', 1, 2),
+( 4, 'BD', '4 semanas', 2, 10),
 ( 4, 'softSkills', '5 semanas', 1, 1),
 ( 4, 'softSkills', '4 semanas', 2, 6);
 

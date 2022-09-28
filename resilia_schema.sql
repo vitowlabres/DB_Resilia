@@ -21,6 +21,10 @@ CREATE TABLE IF NOT EXISTS Facilitadores (
 
 CREATE TABLE IF NOT EXISTS Cursos (
     id_curso INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    curso VARCHAR(64) NOT NULL,
+    emp_parceira VARCHAR(64),
+    FOREIGN KEY (id_modulo)
+        REFERENCES Modulos (id_modulo)
 );
 
 CREATE TABLE IF NOT EXISTS Modulos (
