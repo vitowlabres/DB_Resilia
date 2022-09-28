@@ -2,9 +2,11 @@ create database if not exists Resilia;
 
 use Resilia;
 
-CREATE TABLE IF NOT EXISTS Departamentos (
-    id_departamento INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-);
+create table if not exists Departamentos (
+    id_departamento int primary key not null auto_increment,
+    Departamento varchar(200) not null,
+    sigla varchar(200) not null,
+    modalidade varchar(200) not null);
 
 CREATE TABLE IF NOT EXISTS Facilitadores (
     id_facilitador INT PRIMARY KEY NOT NULL AUTO_INCREMENT,

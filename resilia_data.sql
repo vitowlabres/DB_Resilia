@@ -1,9 +1,13 @@
 use Resilia;
 
-insert into Departamentos (, , ) values 
-(, , , , ),
-(, , , , ),
-(, , , , );
+ insert into Departamentos(Departamento, sigla, modalidade) values
+    ('Administrativo', 'ADM', 'Hibrido'),
+    ('Financeiro', 'FIN', 'Presencial'),
+    ('Recursos humanos', 'RH', 'Hibrido'),
+    ('comercial', 'COM', 'Presencial'),
+    ('ensino', 'ENS', 'Hibrido'),
+    ('Gente e engajamento', 'GEN/ENG', 'Hibrido'),
+    ('facilitadores', 'FAC', 'Hibrido');
 
 insert into Facilitadores (nome, sobreNome, HTML, CSS, JS, BD, softSkills) values 
 ( 'Taís', 'Cunha', false, false, false, false, true),
