@@ -54,3 +54,17 @@ FROM
     ORDER BY UF) AS regioes
 GROUP BY regiao
 ORDER BY Alunos;
+
+#Alunos e facilitadores por gênero:
+	#Alunos:
+	SELECT 
+		genero, COUNT(id_aluno) alunos
+	FROM
+		Alunos
+	GROUP BY genero;
+	#Facilitadores:
+    SELECT
+		genero, COUNT(id_facilitador) facilitadores
+	FROM
+		Facilitadores
+	GROUP BY genero;
