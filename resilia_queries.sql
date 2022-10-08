@@ -13,3 +13,14 @@ FROM
         INNER JOIN
     EmpresasParceiras e USING (id_emp_parceira)
 ORDER BY aluno;
+
+#Facilitadores que estão em mais de uma turma
+SELECT 
+    f.nome, COUNT(m.id_facilitador) Turmas
+FROM
+    Modulos m
+        INNER JOIN
+    Facilitadores f USING (id_facilitador)
+GROUP BY f.nome
+HAVING Turmas > 1
+ORDER BY Turmas DESC;
