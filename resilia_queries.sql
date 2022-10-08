@@ -40,3 +40,17 @@ FROM
         INNER JOIN
     Cursos c USING (id_curso)
 GROUP BY curso;
+
+#Quantos alunos por região do país?
+SELECT 
+    regiao AS Região, SUM(qtdUF) Alunos
+FROM
+    (SELECT 
+        COUNT(a.id_estado) AS qtdUF, e.UF, e.regiao
+    FROM
+        Alunos a
+    INNER JOIN Estados e USING (id_estado)
+    GROUP BY UF
+    ORDER BY UF) AS regioes
+GROUP BY regiao
+ORDER BY Alunos;
