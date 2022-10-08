@@ -24,3 +24,10 @@ FROM
 GROUP BY f.nome
 HAVING Turmas > 1
 ORDER BY Turmas DESC;
+
+#Quantidade de turmas por curso
+SELECT 
+    curso, COUNT(id_curso) turmas
+FROM
+    Cursos
+GROUP BY curso;
