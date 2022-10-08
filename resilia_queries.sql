@@ -31,3 +31,12 @@ SELECT
 FROM
     Cursos
 GROUP BY curso;
+
+#Estudantes por curso
+SELECT 
+    c.curso, COUNT(a.id_aluno) Alunos
+FROM
+    Alunos a
+        INNER JOIN
+    Cursos c USING (id_curso)
+GROUP BY curso;
